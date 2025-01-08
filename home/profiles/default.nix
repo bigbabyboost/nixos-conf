@@ -1,0 +1,6 @@
+{
+  "xaolan@ionia" = [
+    ../.
+    ./ionia
+  ];
+}
