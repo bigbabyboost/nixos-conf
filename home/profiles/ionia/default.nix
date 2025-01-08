@@ -14,7 +14,6 @@
 
     # media services
     ../../services/media/playerctl.nix
-    # ../../services/media/spotifyd.nix
 
     # system services
     ../../services/system/kdeconnect.nix

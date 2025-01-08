@@ -11,12 +11,6 @@
     ./disk-configuration.nix
   ];
 
-  age.secrets.spotify = {
-    file = "${self}/secrets/spotify.age";
-    owner = "xaolan";
-    group = "users";
-  };
-
   boot.kernelPackages = lib.mkForce pkgs.linuxPackages_latest;
 
   boot = {

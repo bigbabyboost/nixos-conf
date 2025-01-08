@@ -56,15 +56,6 @@
 
     # rest of inputs, alphabetical order
 
-    agenix = {
-      url = "github:ryantm/agenix";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "hm";
-        systems.follows = "systems";
-      };
-    };
-
     ags.url = "github:Aylur/ags/v1";
     ags-dots = {
       url = "github:ImRayy/ags-dots";

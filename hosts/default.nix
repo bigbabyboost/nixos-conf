@@ -43,7 +43,6 @@
             };
           }
 
-          inputs.agenix.nixosModules.default
           inputs.chaotic.nixosModules.default
           inputs.disko.nixosModules.default
         ];
