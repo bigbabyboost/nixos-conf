@@ -4,6 +4,7 @@
     ./home-manager.nix
     # ./qt.nix
     ./xdg.nix
+    ./gnupg.nix
   ];
 
   programs = {
