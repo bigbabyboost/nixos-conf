@@ -10,6 +10,7 @@ in {
 
   # enable scrolling in git diff
   home.sessionVariables.DELTA_PAGER = "less -R";
+  programs.gh.gitCredentialHelper.enable = "true";
 
   programs.git = {
     enable = true;
@@ -99,6 +100,7 @@ in {
       };
 
       pull.rebase = true;
+      credential.helper = "store";
     };
 
     userEmail = "ah0199004@gmail.com";
