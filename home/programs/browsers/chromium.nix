@@ -8,10 +8,10 @@ let
     "aleakchihdccplidncghkekgioiakgal" # h264ify
     "icallnadddjmdinamnolclfjanhfoafe" # fastforward
     "eimadpbcbfnmbkopoojfekhnkhdbieeh" # dark reader
-    "bpoadfkcbjbfhfodiogcnhhhpibjhbnh" # immersive tr
     "dhdgffkkebhmkfjojejmpbldmpobfkfo" # tampermonkey
     "ldgfbffkinooeloadekpmfoklnobpien" # raindrop
     "lckanjgmijmafbedllaakclkaicjfmnk" # clearurl's
+    "ghbmnnjooekpmoecnnnilnnbdlolhkhi" # google doc's offline
   ];
 
   # Common command line flags for both browsers
