@@ -4,9 +4,10 @@
   ];
 
   home.packages = with pkgs; [
-    #libreoffice
-    #obsidian
-    #rnote
-    #xournalpp
+    libreoffice
+    obsidian
+    rnote
+    xournalpp
+    onlyoffice-desktopeditors
   ];
 }
