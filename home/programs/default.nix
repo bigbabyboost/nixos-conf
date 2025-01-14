@@ -18,6 +18,7 @@
     tdesktop
     micro
     fastfetch
+    intel-gpu-tools
 
     gnome-calculator
     gnome-control-center
