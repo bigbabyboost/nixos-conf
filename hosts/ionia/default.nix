@@ -11,7 +11,7 @@
     ./disk-configuration.nix
   ];
 
-  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_latest;
+  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_cachyos-lto;
 
   boot = {
     kernelModules = ["kvm-intel"];
