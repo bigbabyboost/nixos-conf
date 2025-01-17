@@ -1,9 +1,9 @@
 {
   theme = {
     wallpaper = let
-      url = "https://w.wallhaven.cc/full/gp/wallhaven-gpgyw3.jpg";
-      sha256 = "10zcs2z83kq02x56z7h1584ng41sjv73jsrnnklf4fk0h9axivpp";
-      ext = "jpg";
+      url = "https://github.com/saint-13/Linux_Dynamic_Wallpapers/blob/main/Dynamic_Wallpapers/ChromeOSWind/ChromeOSWind-2.png?raw=true";
+      sha256 = "0j4m3azrwgfh3rahmasv4c8pr40x1brbn77nx54hpmg8pb9i67cc";
+      ext = "png";
     in
       builtins.fetchurl {
         name = "wallpaper-${sha256}.${ext}";

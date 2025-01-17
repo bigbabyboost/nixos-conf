@@ -15,10 +15,14 @@
   ];
 
   home.packages = with pkgs; [
-    tdesktop
+    telegram-desktop
     micro
     fastfetch
     intel-gpu-tools
+    openssl
+    glib-networking
+    gnutls
+
 
     gnome-calculator
     gnome-control-center

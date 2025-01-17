@@ -45,6 +45,8 @@
 
           inputs.chaotic.nixosModules.default
           inputs.disko.nixosModules.default
+#          inputs.stylix.nixosModules.stylix
+#          inputs.nixpkgs-wayland.overlay
         ];
     };
   };

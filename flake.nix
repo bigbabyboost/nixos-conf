@@ -58,7 +58,7 @@
 
     ags.url = "github:Aylur/ags/v1";
     ags-dots = {
-      url = "github:ImRayy/ags-dots";
+      url = "github:bigbabyboost/ags-dots";
       flake = false;
     };
 
@@ -88,6 +88,11 @@
         flake-parts.follows = "flake-parts";
       };
     };
+    
+#    nixpkgs-wayland = {
+#      url = "github:nix-community/nixpkgs-wayland";
+#      inputs.nixpkgs.follows = "nixpkgs";
+#    };
 
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
@@ -141,6 +146,8 @@
         systems.follows = "hyprland/systems";
       };
     };
+
+#    stylix.url = "github:danth/stylix";
 
     tailray = {
       url = "github:NotAShelf/tailray";

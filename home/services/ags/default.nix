@@ -1,6 +1,8 @@
 {
   inputs,
   pkgs,
+  cinfig,
+  lib,
   ...
 }: {
   # add the home manager module
@@ -8,14 +10,17 @@
 
   home.packages = with pkgs; [
     inputs.self.packages.${pkgs.system}.bun-baseline
-    hyprpicker
-    hyprshade
-    sassc
-    zenity
     dart-sass
+    coreutils
+    gawk
+    procps
+    sassc
     inotify-tools
-    swww
     imagemagick
+    util-linux
+    hyprshade
+    hyprpicker
+    swww
   ];
 
   programs.ags = {
@@ -30,6 +35,9 @@
       gtksourceview
       webkitgtk
       accountsservice
+      overskride
+      resources
+      wlogout
     ];
   };
   systemd.user.services.ags = {
