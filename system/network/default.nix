@@ -6,7 +6,7 @@
 
     networkmanager = {
       enable = true;
-     # dns = "systemd-resolved";
+      # dns = "systemd-resolved";
       wifi.powersave = true;
     };
   };

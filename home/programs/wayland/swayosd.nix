@@ -1,4 +1,4 @@
-{ 
+{
   services.swayosd.enable = true;
   xdg.configFile."swayosd/style.css".text = ''
     window {

@@ -3,7 +3,14 @@
   pkgs,
   config,
   ...
-}: {
+}: let
+  catppuccinMocha = pkgs.catppuccin-gtk.override {
+    accents = ["lavender"]; # You can specify multiple accents here to output multiple themes
+    size = "compact";
+    tweaks = ["rimless"]; # You can also specify multiple tweaks here
+    variant = "mocha";
+  };
+in {
   home.pointerCursor = {
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
@@ -24,13 +31,13 @@
     gtk2.configLocation = "${config.xdg.configHome}/gtk-2.0/gtkrc";
 
     iconTheme = {
-      name = "Adwaita";
-      package = pkgs.adwaita-icon-theme;
+      name = "Papirus-Dark";
+      # package = pkgs.adwaita-icon-theme;
     };
 
     theme = {
-      name = "adw-gtk3";
-      package = pkgs.adw-gtk3;
+      name = "catppuccin-latte-lavender-compact+rimless";
+      package = catppuccinMocha; # Use the overridden catppuccin-latte variant here
     };
   };
 

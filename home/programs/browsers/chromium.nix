@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
-let
+{
+  config,
+  pkgs,
+  ...
+}: let
   # Common extensions for both browsers
   commonExtensions = [
     "cjpalhdlnbpafiamejdnhcphjbkeiagm" # ublock origin
@@ -28,7 +30,6 @@ let
     "--enable-unsafe-webgpu"
     "--ozone-platform-hint=wayland"
   ];
-
 in {
   # Configure Brave browser
   programs.brave = {

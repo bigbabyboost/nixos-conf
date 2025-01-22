@@ -11,7 +11,7 @@
       ];
       Install.WantedBy = ["graphical-session.target"];
     };
-    
+
     theme-gtk3-dark = {
       Unit.Description = "Toggle dark gtk3 theme";
       Timer.OnCalendar = [
@@ -27,7 +27,7 @@
       ];
       Install.WantedBy = ["graphical-session.target"];
     };
-    
+
     theme-gtk3-light = {
       Unit.Description = "Toggle light gtk3 theme";
       Timer.OnCalendar = [

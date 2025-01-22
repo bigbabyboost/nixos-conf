@@ -24,7 +24,7 @@
         laptop
         ++ [
           ./ionia
-          
+
           "${mod}/programs/gamemode.nix"
           "${mod}/programs/hyprland.nix"
           "${mod}/programs/games.nix"
@@ -45,8 +45,9 @@
 
           inputs.chaotic.nixosModules.default
           inputs.disko.nixosModules.default
-#          inputs.stylix.nixosModules.stylix
-#          inputs.nixpkgs-wayland.overlay
+          inputs.catppuccin.nixosModules.catppuccin
+          #          inputs.stylix.nixosModules.stylix
+          #          inputs.nixpkgs-wayland.overlay
         ];
     };
   };

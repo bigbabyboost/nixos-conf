@@ -29,7 +29,7 @@
     enable = true;
 
     # null or path, leave as null if you don't want hm to manage the config
-#    configDir = 
+    #    configDir =
 
     # additional packages to add to gjs's runtime
     extraPackages = with pkgs; [
@@ -63,7 +63,7 @@
       Description = "Gnome RFKill support service";
     };
     Service = {
-      BusName= "org.gnome.SettingsDaemon.Rfkill";
+      BusName = "org.gnome.SettingsDaemon.Rfkill";
       ExecStart = "${pkgs.gnome-settings-daemon}/libexec/gsd-rfkill";
       Restart = "on-failure";
       TimeoutStopSec = "5";
@@ -71,5 +71,4 @@
     };
     Install.WantedBy = ["graphical-session.target"];
   };
-
 }

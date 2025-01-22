@@ -62,6 +62,8 @@
 
     anyrun.url = "github:anyrun-org/anyrun";
 
+    catppuccin.url = "github:catppuccin/nix";
+
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     disko = {
@@ -88,11 +90,11 @@
         flake-parts.follows = "flake-parts";
       };
     };
-    
-#    nixpkgs-wayland = {
-#      url = "github:nix-community/nixpkgs-wayland";
-#      inputs.nixpkgs.follows = "nixpkgs";
-#    };
+
+    #    nixpkgs-wayland = {
+    #      url = "github:nix-community/nixpkgs-wayland";
+    #      inputs.nixpkgs.follows = "nixpkgs";
+    #    };
 
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
@@ -147,7 +149,7 @@
       };
     };
 
-#    stylix.url = "github:danth/stylix";
+    #    stylix.url = "github:danth/stylix";
 
     tailray = {
       url = "github:NotAShelf/tailray";

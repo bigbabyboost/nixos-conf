@@ -16,7 +16,6 @@
   boot = {
     kernelModules = ["kvm-intel"];
     kernelParams = [
-      
     ];
   };
 
@@ -36,7 +35,7 @@
   services = {
     # for SSD/NVME
     fstrim.enable = true;
-    
+
     # Flatpak support
     flatpak.enable = true;
   };
