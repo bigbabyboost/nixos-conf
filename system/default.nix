@@ -15,6 +15,7 @@ let
     ./services
     ./services/greetd.nix
     ./services/pipewire.nix
+    ./services/swayosd.nix
   ];
 
   laptop =

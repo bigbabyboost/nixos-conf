@@ -108,18 +108,20 @@ in {
       ", XF86AudioNext, exec, playerctl next"
 
       # volume
-      ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+      ", XF86AudioMute, exec, swayosd-client --output-volume mute-toggle"
       ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
     ];
 
     bindle = [
       # volume
-      ", XF86AudioRaiseVolume, exec, wpctl set-volume -l '1.0' @DEFAULT_AUDIO_SINK@ 6%+"
-      ", XF86AudioLowerVolume, exec, wpctl set-volume -l '1.0' @DEFAULT_AUDIO_SINK@ 6%-"
+      ", XF86AudioRaiseVolume, exec, swayosd-client --output-volume +2 --max-volume=100"
+      ", XF86AudioLowerVolume, exec, swayosd-client --output-volume -2"
 
       # backlight
-      ", XF86MonBrightnessUp, exec, brillo -q -u 300000 -A 5"
-      ", XF86MonBrightnessDown, exec, brillo -q -u 300000 -U 5"
+      ", XF86MonBrightnessUp, exec, swayosd-client --brightness raise 5%+"
+      ", XF86MonBrightnessDown, exec, swayosd-client --brightness lower 5%+"
+      "$mod, XF86MonBrightnessUp, exec, brillo -q -u 300000 -A 5"
+      "$mod, XF86MonBrightnessDown, exec, brillo -q -u 300000 -U 5"
     ];
   };
 }

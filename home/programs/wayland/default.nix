@@ -9,6 +9,7 @@
     ./hyprland
     ./hyprlock.nix
     ./wlogout.nix
+    ./swayosd.nix
   ];
 
   home.packages = with pkgs; [
