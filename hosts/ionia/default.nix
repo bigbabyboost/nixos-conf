@@ -23,6 +23,12 @@
   # nh default flake
   environment.variables.FLAKE = "/home/xaolan/Documents/code/snekbox";
 
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+    EDITOR = "hx";
+    TERM = "kitty";
+  };
+
   networking.hostName = "ionia";
 
   security.tpm2.enable = true;

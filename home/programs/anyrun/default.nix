@@ -12,7 +12,7 @@
 
     config = {
       plugins = with inputs.anyrun.packages.${pkgs.system}; [
-        uwsm_app
+        applications
         randr
         rink
         shell
@@ -28,10 +28,14 @@
     extraCss = builtins.readFile (./. + "/style-dark.css");
 
     extraConfigFiles = {
-      "uwsm_app.ron".text = ''
+      "applications.ron".text = ''
         Config(
           desktop_actions: false,
           max_entries: 5,
+          terminal: Some(Terminal(
+          	command: "kitty",
+          	args: "-e {}",
+          )),
         )
       '';
 

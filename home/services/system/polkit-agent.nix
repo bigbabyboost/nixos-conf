@@ -4,15 +4,13 @@
 
     Install = {
       WantedBy = ["graphical-session.target"];
-      Wants = ["graphical-session.target"];
-      After = ["graphical-session.target"];
     };
 
     Service = {
       Type = "simple";
       ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
       Restart = "on-failure";
-      RestartSec = 1;
+      RestartSec = 3;
       TimeoutStopSec = 10;
     };
   };

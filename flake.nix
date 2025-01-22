@@ -57,12 +57,10 @@
     # rest of inputs, alphabetical order
 
     ags.url = "github:Aylur/ags/v1";
-    ags-dots = {
-      url = "github:bigbabyboost/ags-dots";
-      flake = false;
-    };
 
-    anyrun.url = "github:fufexan/anyrun/launch-prefix";
+    # anyrun.url = "github:fufexan/anyrun/launch-prefix";
+
+    anyrun.url = "github:anyrun-org/anyrun";
 
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
@@ -70,6 +68,8 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    helix.url = "github:helix-editor/helix";
 
     hm = {
       url = "github:nix-community/home-manager";

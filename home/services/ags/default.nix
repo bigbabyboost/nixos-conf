@@ -21,13 +21,15 @@
     hyprshade
     hyprpicker
     swww
+    brightnessctl
+    sassc
   ];
 
   programs.ags = {
     enable = true;
 
     # null or path, leave as null if you don't want hm to manage the config
-    configDir = inputs.ags-dots;
+#    configDir = 
 
     # additional packages to add to gjs's runtime
     extraPackages = with pkgs; [
@@ -56,4 +58,18 @@
     };
     Install.WantedBy = ["graphical-session.target"];
   };
+  systemd.user.services.gsd-rfkill = {
+    Unit = {
+      Description = "Gnome RFKill support service";
+    };
+    Service = {
+      BusName= "org.gnome.SettingsDaemon.Rfkill";
+      ExecStart = "${pkgs.gnome-settings-daemon}/libexec/gsd-rfkill";
+      Restart = "on-failure";
+      TimeoutStopSec = "5";
+      Type = "dbus";
+    };
+    Install.WantedBy = ["graphical-session.target"];
+  };
+
 }

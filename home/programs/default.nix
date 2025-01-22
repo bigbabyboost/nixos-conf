@@ -22,6 +22,8 @@
     openssl
     glib-networking
     gnutls
+    nautilus
+    xfce.thunar
 
 
     gnome-calculator

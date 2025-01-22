@@ -1,7 +1,8 @@
 {
   imports = [
     # editors
-    #../../editors/helix
+    ../../editors/helix
+    ../../editors/zed
 
     # programs
     ../../programs
@@ -32,6 +33,7 @@
 
     # terminal emulators
     ../../terminal/emulators/kitty.nix
+    #../../terminal/emulators/foot.nix
   ];
 
   wayland.windowManager.hyprland.settings = let
