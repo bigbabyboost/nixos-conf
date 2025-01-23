@@ -73,7 +73,7 @@ in {
   home.packages = [
     # used by `gio open` and xdp-gtk
     (pkgs.writeShellScriptBin "xdg-terminal-exec" ''
-      kitty "$@"
+      foot "$@"
     '')
     pkgs.xdg-utils
   ];

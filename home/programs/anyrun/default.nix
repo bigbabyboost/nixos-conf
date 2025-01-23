@@ -33,7 +33,7 @@
           desktop_actions: false,
           max_entries: 5,
           terminal: Some(Terminal(
-          	command: "kitty",
+          	command: "foot",
           	args: "-e {}",
           )),
         )

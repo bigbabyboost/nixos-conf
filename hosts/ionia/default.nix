@@ -25,7 +25,7 @@
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
     EDITOR = "hx";
-    TERM = "kitty";
+    TERM = "foot";
   };
 
   networking.hostName = "ionia";

@@ -51,7 +51,7 @@
       Unit.Description = "Toggle dark gtk3 theme";
       Service = {
         Type = "simple";
-        ExecStart = "${lib.getExe pkgs.dconf} write /org/gnome/desktop/interface/gtk-theme \"'catppuccin-mocha-lavender-compact+rimless'\"";
+        ExecStart = "${lib.getExe pkgs.dconf} write /org/gnome/desktop/interface/gtk-theme \"'adw-gtk3-dark'\"";
         TimeoutStopSec = 5;
       };
     };
@@ -69,7 +69,7 @@
       Unit.Description = "Toggle light gtk3 theme";
       Service = {
         Type = "simple";
-        ExecStart = "${lib.getExe pkgs.dconf} write /org/gnome/desktop/interface/gtk-theme \"'catppuccin-latte-lavender-compact+rimless'\"";
+        ExecStart = "${lib.getExe pkgs.dconf} write /org/gnome/desktop/interface/gtk-theme \"'adw-gtk3'\"";
         TimeoutStopSec = 5;
       };
     };

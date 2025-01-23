@@ -44,7 +44,7 @@ in {
 
         # utility
         # terminal
-        "$mod, Return, exec, uwsm app -- kitty"
+        "$mod, Return, exec, uwsm app -- foot"
         # logout menu
         "$mod, Escape, exec, ${toggle "wlogout"} -p layer-shell"
         # lock screen
@@ -94,6 +94,28 @@ in {
         "$mod SHIFT ALT, bracketright, movecurrentworkspacetomonitor, r"
       ]
       ++ workspaces;
+
+    binde = [
+      # resize window
+      "$mod SHIFT, left, resizeactive, -20 0"
+      "$mod CTRL, H, resizeactive, -20 0"
+      "$mod SHIFT, right, resizeactive,  20 0"
+      "$mod CTRL, L, resizeactive,  20 0"
+      "$mod SHIFT, up, resizeactive,  0 -20"
+      "$mod CTRL, K, resizeactive,  0 -20"
+      "$mod SHIFT, down, resizeactive,  0 20"
+      "$mod CTRL, J, resizeactive,  0 20"
+
+      # move window
+      "$mod ALT, left, movewindow, l"
+      "$mod ALT, H, movewindow, l"
+      "$mod ALT, right, movewindow, r"
+      "$mod ALT, L, movewindow, r"
+      "$mod ALT, up, movewindow, u"
+      "$mod ALT, K, movewindow, u"
+      "$mod ALT, down, movewindow, d"
+      "$mod ALT, J, movewindow, d"
+    ];
 
     bindr = [
       # launcher
