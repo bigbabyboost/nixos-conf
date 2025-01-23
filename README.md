@@ -2,10 +2,10 @@
 
 ## Screenshots
 
-<img src="./assets/desk.png" align="center">
-<img src="./assets/ags.png" align="center">
-<img src="./assets/ags2.png" align="center">
-<img src="./assets/anyrun.png" align="center">
+<img src="./.assets/desk.png" align="center">
+<img src="./.assets/ags.png" align="center">
+<img src="./.assets/ags2.png" align="center">
+<img src="./.assets/anyrun.png" align="center">
 
 ## Credits
 
