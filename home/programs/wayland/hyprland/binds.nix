@@ -68,15 +68,14 @@ in {
         # screenshot
         # area
         ", Print, exec, ${runOnce "grimblast"} --notify copysave area"
-        "$mod SHIFT, R, exec, ${runOnce "grimblast"} --notify copysave area"
 
         # current screen
         "CTRL, Print, exec, ${runOnce "grimblast"} --notify --cursor copysave output"
-        "$mod SHIFT CTRL, R, exec, ${runOnce "grimblast"} --notify --cursor copysave output"
+        "$mod, Print, exec, ${runOnce "grimblast"} --notify copysave output"
 
         # all screens
-        "ALT, Print, exec, ${runOnce "grimblast"} --notify --cursor copysave screen"
-        "$mod SHIFT ALT, R, exec, ${runOnce "grimblast"} --notify --cursor copysave screen"
+        "ALT, Print, exec, ${runOnce "grimblast"} --notify copysave screen"
+        "$mod SHIFT, R, exec, ${runOnce "grimblast"} --notify --cursor copysave screen"
 
         # special workspace
         "$mod SHIFT, grave, movetoworkspace, special"
