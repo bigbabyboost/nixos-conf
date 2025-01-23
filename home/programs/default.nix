@@ -1,6 +1,5 @@
 {
   pkgs,
-  inputs,
   config,
   ...
 }: let
@@ -9,6 +8,10 @@
     size = "compact";
     tweaks = ["rimless"];
     variant = "latte";
+  };
+  catppuccin-papirus-latte = pkgs.catppuccin-papirus-folders.override {
+    accent = "lavender";
+    flavor = "latte";
   };
 in {
   imports = [
@@ -34,6 +37,7 @@ in {
     nautilus
     xfce.thunar
     catppuccinLatte
+    catppuccin-papirus-latte
     adwaita-icon-theme
 
     gnome-calculator

@@ -10,7 +10,7 @@
   ];
   catppuccin = {
     gtk.icon = {
-      enable = true;
+      enable = false;
       accent = "lavender";
       flavor = "mocha";
     };

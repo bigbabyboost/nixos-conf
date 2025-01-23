@@ -7,8 +7,6 @@
     # shorten paths
     inherit (inputs.nixpkgs.lib) nixosSystem;
 
-    howdy = inputs.nixpkgs-howdy;
-
     homeImports = import "${self}/home/profiles";
 
     mod = "${self}/system";
